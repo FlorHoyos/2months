@@ -7,31 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to Our Romantic Gallery</h1>
+    <h1>Our Romantic Gallery</h1>
     <div class="gallery">
         <div class="image-container" id="image1">
-            <p>Question 1: What month did we have our first date?</p>
-            <input type="text" id="answer1" placeholder="Your answer">
-            <button onclick="checkAnswer(1, 'January')">Submit</button>
+            <p>Happy 2 months Amor, recuerda que eres my love.</p>
+            <button onclick="toggleImage(1)">Show Image</button>
             <img src="pic1.jpg" class="hidden">
         </div>
         <div class="image-container" id="image2">
-            <p>Question 2: What month did we make official?</p>
-            <input type="text" id="answer2" placeholder="Your answer">
-            <button onclick="checkAnswer(2, 'April')">Submit</button>
+            <p>I'm so happy to have met you. Eres maravilloso.</p>
+            <button onclick="toggleImage(2)">Show Image</button>
             <img src="pic2.jpg" class="hidden">
         </div>
         <div class="image-container" id="image3">
-            <p>Question 3: What city did we travel together to?</p>
-            <input type="text" id="answer3" placeholder="Your answer">
-            <button onclick="checkAnswer(3, 'San Francisco')">Submit</button>
+            <p>In all the world, there is no heart for me like yours.</p>
+            <button onclick="toggleImage(3)">Show Image</button>
             <img src="pic3.jpg" class="hidden">
         </div>
-        <!-- Add more images here following the same structure -->
     </div>
     <audio controls autoplay loop>
         <source src="your-song.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
+        
     </audio>
     <script src="js/script.js"></script>
 </body>
