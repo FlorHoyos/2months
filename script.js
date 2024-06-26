@@ -1,11 +1,12 @@
-function checkAnswer(questionNumber, correctAnswer) {
-    var userAnswer = document.getElementById('answer' + questionNumber).value;
-    var image = document.getElementById('image' + questionNumber).querySelector('img');
+function toggleImage(imageNumber) {
+    var image = document.getElementById('image' + imageNumber).querySelector('img');
+    var button = document.getElementById('image' + imageNumber).querySelector('button');
     
-    if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+    if (image.classList.contains('hidden')) {
         image.classList.remove('hidden');
-        alert('Correct! Enjoy the image.');
+        button.textContent = 'Hide Image';
     } else {
-        alert('Incorrect, please try again.');
+        image.classList.add('hidden');
+        button.textContent = 'Show Image';
     }
 }
