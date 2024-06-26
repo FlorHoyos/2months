@@ -5,3 +5,12 @@ document.addEventListener('DOMContentLoaded', function() {
         img.style.display = 'block'; // Ensure image is displayed
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var backgroundAudio = document.getElementById('backgroundAudio');
+    
+    // Attempt to play audio programmatically
+    backgroundAudio.play().catch(function(error) {
+        console.error('Autoplay was prevented:', error);
+    });
+});
