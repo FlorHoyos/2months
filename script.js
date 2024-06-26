@@ -1,12 +1,7 @@
-function toggleImage(imageNumber) {
-    var image = document.getElementById('image' + imageNumber).querySelector('img');
-    var button = document.getElementById('image' + imageNumber).querySelector('button');
-    
-    if (image.classList.contains('hidden')) {
-        image.classList.remove('hidden');
-        button.textContent = 'Hide Image';
-    } else {
-        image.classList.add('hidden');
-        button.textContent = 'Show Image';
-    }
-}
+document.addEventListener('DOMContentLoaded', function() {
+    // Example: Automatically showing images on page load
+    var images = document.querySelectorAll('.image-container img');
+    images.forEach(function(img) {
+        img.style.display = 'block'; // Ensure image is displayed
+    });
+});
