@@ -27,6 +27,10 @@ h1 {
     width: 200px;
 }
 
+.image-container p {
+    font-style: italic;
+}
+
 .image-container img {
     width: 100%;
     height: auto;
